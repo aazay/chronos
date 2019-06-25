@@ -116,10 +116,10 @@ ul{
 }
 
 .message img{
-    padding:2rem;
+    /* padding:2rem; */
     height: 100%;
     border-radius:2rem;
-    background-color: #424446;
+    background: #f5f6f6; 
     margin:0.5rem;
      
 }
@@ -144,6 +144,12 @@ ul{
 
 .message .inbox{
     padding: 1rem;
+}
+
+.message-menu a span{
+    background: #ce143c;
+    padding:0.5rem;
+    border-radius: 5rem;
 }
 
 .display{
@@ -210,10 +216,16 @@ ul{
 }
 
 .container .item{
+    display: flex;
+    flex: wrap;
+    color: #afafaa;
+    font-size: 2rem;
     background:#ffffff url('../img/adventure-cloudscape-cold-2387869.jpg') no-repeat center center/cover;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     height:400px;
-    min-width:400px;
+    width: 400px;
     margin: 2rem 1rem 1rem 1rem;
     border-radius: 5px;
 }
