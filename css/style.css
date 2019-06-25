@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.py-1{
+    padding: 0 0.75rem;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+.p-2{
+    padding:2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.color-primary{
+    background:#3286e6;
+    color:#ffffff;
+}
+
+/* navbar */
+.navbar{
+    padding: 0.25rem;
+    display: flex;
+    /* color: black; */
+    height: 4rem;
+    position: sticky;
+    justify-content:flex-start;
+    top: 0;
+    z-index: 10;
+}
+
+.scrolled{
+    background: rgba(255,255,255, 0.6);
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li a{
+    padding:1.3rem;
+    border-radius: 5px;
+}
+
+.navbar ul li a:active,.navbar ul li a:hover{
+    background:#3286e6;
+    color:#ffffff;
+}
+
+.navbar .login-details{
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img{
+    width: 1rem;
+    height:1rem
+}
+
+.message-menu{
+    display: flex;
+    height: 100%;;
+}
+
+/* navbar-message */
+
+.message{
+    flex: 1;
+    flex-direction: column;
+    top:100%;
+    right: 50%;
+    height: 250px;
+    width:400px;
+    border-radius: 5px;
+    margin: 2rem;
+    position: relative;
+    display: none;
+    z-index: 5;
+}
+
+.message .message-scroll{
+    height: 100%;
+    width:100%;
+    border-radius: 5px;
+    background:#ffffff;
+    overflow-y: scroll;
+}
+
+.messages{
+    display: flex;
+    margin: 0.5 rem;
+    justify-content: center;
+    border-bottom: grey 1px solid;
+}
+
+.message img{
+    padding:2rem;
+    height: 100%;
+    border-radius:2rem;
+    background-color: #424446;
+    margin:0.5rem;
+     
+}
+
+.message .single-message{
+    margin:0.5rem;
+}
+
+.message::after{
+    position: absolute;
+    left:50%;
+    margin-left:-20px; 
+    height:20px;
+    width: 20px;
+    /* border: grey 5px solid; */
+    content: '';
+    bottom: 100%;
+    margin-bottom: -10px;
+    background: #ffffff;
+    transform: rotate(45deg)
+}
+
+.message .inbox{
+    padding: 1rem;
+}
+
+.display{
+    display: block;
+}
+/* header */
+
+.header{
+    background: #424446 url('../img/adventure-cloudscape-cold-2387869.jpg') no-repeat center center/cover;
+    height: 70vh; 
+}
+
+.header .overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fcfcf7;
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+.header i{
+    color:palevioletred;
+}
+
+
+.overlay .like-counter,.overlay .feature-title{
+    padding-bottom: 2rem;
+}
+
+.overlay .feature-title{
+    padding: 1rem;
+    color: #afafaa;
+    text-decoration: underline;
+}
+
+.featured-content .featured-title{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.featured-menu ul{
+    margin: 0.8rem;
+}
+
+.featured-menu a{
+    color: #afafaa;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+}
+
+/* pin-board    */
+
+.pin-board{
+    font-size: 1rem;
+}
+
+.container .items{
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container .item{
+    background:#ffffff url('../img/adventure-cloudscape-cold-2387869.jpg') no-repeat center center/cover;
+    text-align: center;
+    height:400px;
+    min-width:400px;
+    margin: 2rem 1rem 1rem 1rem;
+    border-radius: 5px;
+}
+
+
+/* timeline-nav */

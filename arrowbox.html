@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Message Box</title>
+</head>
+<style>
+.message{
+    height: 200px;
+    width:200px;
+    margin: 2rem;
+    position: relative;
+    background:black;
+    border: grey 5px solid;
+}
+
+.message::after{
+    position: absolute;
+    left:50%;
+    margin-left:-20px; 
+    height:20px;
+    width: 20px;
+    border: grey 5px solid;
+    content: '';
+    bottom: 100%;
+    margin-bottom: -10px;
+    background: black;
+    border-bottom:0;
+    border-right: 0;
+    transform: rotate(45deg)
+}
+</style>
+<body>
+    <div class="message">
+
+    </div>
+</body>
+</html>
